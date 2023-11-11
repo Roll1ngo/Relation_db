@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "alchemy"
+version = "0.1.0"
+description = ""
+authors = ["Vladislav B <131883552+Roll1ngo@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+sqlalchemy = "^2.0.22"
+faker = "^19.12.1"
+psycopg2 = "^2.9.9"
+rich = "^13.6.0"
+aiosqlite = "^0.19.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

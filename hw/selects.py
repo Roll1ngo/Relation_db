@@ -98,7 +98,7 @@ ORDER BY dis.name ;
 if __name__ == '__main__':
     connect = sqlite3.connect('hw_db.sqlite')
     cur = connect.cursor()
-    cur.executescript(select_5)
+    cur.execute(select_2)
     connect.commit()
     print(cur.fetchall())
     cur.close()

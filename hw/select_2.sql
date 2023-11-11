@@ -3,5 +3,6 @@ FROM grades gr
 JOIN students st ON st.id = gr.student_id
 JOIN disciplines dis ON dis.id = gr.discipline_id 
 WHERE dis.id = 1
-GROUP BY dis.name
-ORDER BY average_grade DESC;
+GROUP BY st.fullname
+ORDER BY average_grade DESC
+LIMIT 1;
